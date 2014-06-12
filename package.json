@@ -1,0 +1,21 @@
+{
+  "name": "funcky.req",
+  "version": "0.0.0",
+  "description": "",
+  "main": "dist/latest/index.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "gijsjan.brouwer@huygens.knaw.nl (https://github.com/Gijsjan)",
+  "license": "ISC",
+  "devDependencies": {
+    "coffee-script": "^1.7.1",
+    "gulp": "^3.7.0",
+    "gulp-coffee": "^2.0.0",
+    "gulp-rename": "^1.2.0",
+    "gulp-streamify": "0.0.5",
+    "gulp-uglify": "^0.3.0",
+    "gulp-util": "^2.2.16",
+    "rimraf": "^2.2.8"
+  }
+}
