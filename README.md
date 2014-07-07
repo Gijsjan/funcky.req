@@ -17,7 +17,9 @@ req.always (res) ->
 ```JavaScript
 options =
   data:
-    myval: 12
+    myVal: 12
+  headers:
+    'X-My-Header': 'my-header-value'
 
 req = funcky.post 'http://some.url', options
 req.done (res) ->
