@@ -26,3 +26,8 @@ req.done (res) ->
 req.fail (res) ->
 req.always (res) ->
 ```
+
+### Changelog
+
+#### 0.1.0
+* [bug] Don't send empty object when payload is empty.

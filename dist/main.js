@@ -42,9 +42,6 @@
         options = {};
       }
       promise = this._promise();
-      if (options.data == null) {
-        options.data = {};
-      }
       if (options.headers == null) {
         options.headers = {};
       }
