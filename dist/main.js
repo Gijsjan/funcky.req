@@ -48,11 +48,11 @@
       xhr = new XMLHttpRequest();
       xhr.onreadystatechange = function() {
         var _ref;
-        if (xhr.readyState === XMLHttpRequest.DONE) {
+        if (xhr.readyState === 4) {
           if (promise.callAlways != null) {
             promise.callAlways(xhr);
           }
-          if ((200 <= (_ref = xhr.status) && _ref <= 206)) {
+          if ((200 <= (_ref = xhr.status) && _ref <= 206) || xhr.status === 1223) {
             if (promise.callDone != null) {
               return promise.callDone(xhr);
             }

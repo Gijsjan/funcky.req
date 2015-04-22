@@ -25,10 +25,9 @@ module.exports =
 		xhr = new XMLHttpRequest()
 
 		xhr.onreadystatechange = ->
-			if xhr.readyState is XMLHttpRequest.DONE
+			if xhr.readyState is 4
 				promise.callAlways xhr if promise.callAlways?
-
-				if 200 <= xhr.status <= 206
+				if 200 <= xhr.status <= 206 or xhr.status is 1223
 					promise.callDone xhr if promise.callDone?
 				else
 					promise.callFail xhr if promise.callFail?
